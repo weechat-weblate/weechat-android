@@ -20,6 +20,9 @@
 -dontwarn org.ietf.jgss.*
 -dontwarn com.jcraft.jzlib.ZStream
 
+# this is very bad
+-keep class org.bouncycastle.**
+
 # strip debug and trace (verbose) logging
 -assumenosideeffects class org.slf4j.Logger {
     public void debug(...);
